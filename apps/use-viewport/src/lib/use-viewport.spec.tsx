@@ -40,17 +40,17 @@ describe('createTypesafeUseViewport', () => {
     expect(greaterThan('sm')).toBe(false);
     expect(greaterThan('md')).toBe(false);
 
-    expect(greaterThan('xs')).toBe(true);
+    expect(greaterThan('xs', { includes: true })).toBe(true);
     expect(greaterThan('sm', { includes: true })).toBe(true);
-    expect(greaterThan('md')).toBe(false);
-
-    expect(lessThan('xs')).toBe(false);
-    expect(lessThan('sm', { includes: true })).toBe(true);
-    expect(lessThan('md')).toBe(true);
+    expect(greaterThan('md', { includes: true })).toBe(false);
 
     expect(lessThan('xs')).toBe(false);
     expect(lessThan('sm')).toBe(false);
     expect(lessThan('md')).toBe(true);
+
+    expect(lessThan('xs', { includes: true })).toBe(false);
+    expect(lessThan('sm', { includes: true })).toBe(true);
+    expect(lessThan('md', { includes: true })).toBe(true);
 
     expect(betweenBreakpoints('xs', 'sm')).toBe(false);
     expect(
