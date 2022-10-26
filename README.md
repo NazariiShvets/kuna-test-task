@@ -6,9 +6,11 @@ This is an official Yarn v1 starter turborepo.
 
 This turborepo uses [Yarn](https://classic.yarnpkg.com/) as a package manager. It includes the following packages/apps:
 
-### Apps and Packages
+### Apps
 
 - `use-viewport`: useViewport hook + ViewportProvider
+
+### Packages
 
 - `eslint-config-custom`: `eslint` configurations 
 - `tsconfig`: `tsconfig.json`s used throughout the monorepo
