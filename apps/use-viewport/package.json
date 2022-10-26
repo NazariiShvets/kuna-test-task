@@ -1,0 +1,37 @@
+{
+  "name": "use-viewport",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host --open",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "test:watch": "vitest --watch --ui",
+    "test:watch:coverage": "vitest --watch --coverage --ui",
+    "build": "tsc && vite build",
+    "lint": "eslint src --fix",
+    "lint:check": "eslint src",
+    "lint:types": "tsc --noEmit",
+    "app:preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.18.10",
+    "@babel/preset-react": "^7.18.6",
+    "@faker-js/faker": "^7.6.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@types/node": "^16.11.44",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "eslint": "8.15.0",
+    "eslint-config-custom": "*",
+    "tsconfig": "*",
+    "typescript": "4.7.2",
+    "vite": "^3.0.0"
+  }
+}

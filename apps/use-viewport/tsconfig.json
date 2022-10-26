@@ -1,0 +1,20 @@
+{
+  "extends": "tsconfig/base.json",
+  "include": [
+    "src",
+    ".eslintrc.cjs",
+    "vite.config.ts"
+  ],
+  "compilerOptions": {
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+    }
+  },
+  "exclude": [
+    "dist",
+    "build",
+    "node_modules"
+  ]
+}
