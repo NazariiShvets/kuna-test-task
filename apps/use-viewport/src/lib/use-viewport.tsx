@@ -14,6 +14,11 @@ import { useWindowWidth } from './use-window-width';
  * @see https://mui.com/material-ui/customization/breakpoints/#custom-breakpoints
  *
  * External lib can provide both ways (instance and factory)
+ *
+ *
+ * NOTE: Best solution still "native" css `@media`,
+ *  bcs they support ssr out of the box
+ *  If your logic don't depend on mount react components, use css for this
  */
 const createUseViewport = <Breakpoints extends Record<string, number>>(
   defaultBreakpoints: Breakpoints,
